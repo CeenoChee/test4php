@@ -3,8 +3,7 @@
 # Add steps that run tests and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
 
-trigger:
-- main
+trigger: none
 
 parameters:
   # Azure Resource Manager connection created during pipeline creation
