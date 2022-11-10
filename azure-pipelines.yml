@@ -40,6 +40,13 @@ stages:
     pool:
       vmImage: ${{ parameters.vmImageName }}
     steps:
+    - task: ExtractFiles@1
+      inputs:
+        archiveFilePatterns: '**/144.zip'
+        destinationFolder: 'cx1'
+        cleanDestinationFolder: true
+        overwriteExistingFiles: false
+    - script: ls $(System.DefaultWorkingDirectory)
     - script: |
         sudo update-alternatives --set php /usr/bin/php${{ parameters.phpVersion }}
         sudo update-alternatives --set phar /usr/bin/phar${{ parameters.phpVersion }}
