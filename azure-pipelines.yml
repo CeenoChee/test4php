@@ -61,7 +61,7 @@ stages:
     #   displayName: 'Upload package'
     #   artifact: AfterUsePHPVersion
 
-    - script: composer install --no-interaction --prefer-dist
+    - script: composer install --no-interaction --prefer-dist --working-dir /home/site/wwwroot
       workingDirectory: ${{ parameters.rootFolder }}
       displayName: 'Composer install'
 
