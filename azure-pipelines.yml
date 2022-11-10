@@ -50,17 +50,17 @@ stages:
       workingDirectory: ${{ parameters.rootFolder }}
       displayName: 'Use PHP version ${{ parameters.phpVersion }}'
     
-    - upload: ${{ parameters.rootFolder }}
-      displayName: 'Upload package'
-      artifact: AfterUsePHPVersion
+    # - upload: ${{ parameters.rootFolder }}
+    #   displayName: 'Upload package'
+    #   artifact: AfterUsePHPVersion
 
     - script: composer install --no-interaction --prefer-dist
       workingDirectory: ${{ parameters.rootFolder }}
       displayName: 'Composer install'
 
-    - upload: ${{ parameters.rootFolder }}
-      displayName: 'Upload package'
-      artifact: AfterComposerInstall
+    # - upload: ${{ parameters.rootFolder }}
+    #   displayName: 'Upload package'
+    #   artifact: AfterComposerInstall
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
