@@ -40,6 +40,12 @@ stages:
     pool:
       vmImage: ${{ parameters.vmImageName }}
     steps:
+    - bash: |
+        cd /home
+        ls
+        mkdir site
+        cd site
+        mkdir wwwroot
     - task: ExtractFiles@1
       inputs:
         archiveFilePatterns: '**/144.zip'
@@ -60,7 +66,6 @@ stages:
     # - upload: ${{ parameters.rootFolder }}
     #   displayName: 'Upload package'
     #   artifact: AfterUsePHPVersion
-
     - script: composer install --no-interaction --prefer-dist --working-dir /home/site/wwwroot
       workingDirectory: ${{ parameters.rootFolder }}
       displayName: 'Composer install'
