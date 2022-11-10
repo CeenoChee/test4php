@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'all' => 'Összes',
+    'are_you_want_to_delete' => 'Biztosan törölni szeretné?',
+    'asc' => 'Növekvő',
+    'ask_about' => 'Érdeklődj',
+    'cancel' => 'Mégse',
+    'desc' => 'Csökkenő',
+    'how_can_we_help' => 'Miben segíthetünk?',
+    'how_do_you_search' => 'Hogyan kereshetsz?',
+    'how_do_you_search_1' => 'Termék cikkszám - firmware, dokumentáció, letöltés',
+    'how_do_you_search_2' => 'Tudástár cikk - cím, tartalom',
+    'how_do_you_search_3' => 'Videók - cím, leírás',
+    'keyword' => 'Kulcsszó',
+    'name' => 'Név',
+    'no' => 'Nem',
+    'no_results' => 'Sajnos a(z) <span class="font-semibold">":keyword"</span> kifejezésre nincs találat',
+    'qsearch' => 'Keresés...',
+    'results' => 'Találatok a(z) <span class="font-semibold">":keyword"</span> kifejezésre',
+    'search' => 'Keresés',
+    'show_all' => 'Mindent mutat',
+    'social_media' => 'Közösségi média',
+    'view' => 'Megnézem',
+    'yes' => 'Igen',
+    'delete' => 'Törlés',
+    'placeholder' => [
+        'search' => 'A kereséshez kezdj el gépelni...',
+    ],
+    'categories' => 'Kategóriák',
+    'delete_all' => 'Összes törlése',
+    'items' => 'Tételek',
+];

@@ -1,0 +1,13 @@
+steps:
+#Install npm
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+
+#Build css, js, copy images
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'prod']
+
+#Deploy app
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', 'app-prod.yaml', '--no-cache']
+#  timeout: '300s'

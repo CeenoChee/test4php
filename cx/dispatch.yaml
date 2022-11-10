@@ -1,0 +1,21 @@
+dispatch:
+  - url: "api.riel.hu/csv/*"
+    service: default
+
+  - url: "api.riel.hu/xml/*"
+    service: default
+
+  - url: "www.riel.hu/*"
+    service: default
+
+  - url: "www.photron.hu/*"
+    service: default
+
+  - url: "release-w4.riel.hu/*"
+    service: release
+
+  - url: "files.riel.hu/*"
+    service: files
+
+  - url: "release-f4.riel.hu/*"
+    service: release-files

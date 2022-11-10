@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'confirm_your_email' => 'A regisztráció megerősítéséhez szükséges linket elküldtük a megadott :email címre.',
+    'email_not_confirmed' => 'Az e-mail címed megerősítésre vár.<br>Amennyiben az aktiváláshoz szükséges e-mailt nem találod, <a class="text-riel-light" href=":link">kattints ide</a>!',
+    'forgot_password' => 'Elfelejtett jelszó',
+    'incorrect_password' => 'A megadott e-mail-cím vagy jelszó helytelen.',
+    'login' => 'Bejelentkezés',
+    'login_meta_description' => 'Belépés fiókodba. Bejelentkezve hozzáférsz az árakhoz, raktárkészlethez valamint tudsz rendelni.',
+    'logout' => 'Kijelentkezés',
+    'new_register' => 'Új regisztráció',
+    'newsletter_accept' => 'Hozzájárulok, hogy a RIEL Elektronikai Kft. hírlevelek útján tájékoztasson az új termékek és hasznos tudásanyagok megjelenéséről, szakmai eseményekről valamint az aktuális promóciókról és akciókról!',
+    'not_valid_link' => 'A hivatkozás már nem érvényes.',
+    'password_reset' => 'Jelszó visszaállítás',
+    'profile_not_activated' => 'A felhasználói profilod jóváhagyásra vár. Kollégáink legkésőbb a következő munkanapon aktiválják fiókodat. Köszönjük a türelmedet!',
+    'profile_pending' => 'A felhasználói profil pár perc múlva elérhető lesz.',
+    'register' => 'Regisztráció',
+    'register_accept' => 'A RIEL Elektronikai Kft. és a RIEL Online Áruház <a class="text-riel-light" href=":terms_link">Általános szerződési feltételeit</a> és a kapcsolódó <a class="text-riel-light" href=":privacy_link">Adatkezelési tájékoztató</a> tartalmát megismertem és elfogadom!',
+    'register_meta_description' => 'Regisztráció. Bejelentkezve hozzáférsz az árakhoz, raktárkészlethez valamint tudsz rendelni.',
+    'register_success' => 'Sikeres regisztráció!',
+    'register_summary' => 'Regisztráció összegzése',
+    'register_summary_meta_description' => 'Regisztáció. Bejelentkezve hozzáférsz az árakhoz, raktárkészlethez valamint tudsz rendelni.',
+    'remember' => 'Emlékezz rám',
+    'send_verification_success' => 'Az e-mail címed jóváhagyásához szükséges linket ismételten elküldtük.',
+    'update_password' => 'Jelszó módosítás',
+    'verification_subject' => 'E-mail cím megerősítése',
+    'your_mail_is_valid' => 'A e-mail címedet sikeresen aktiváltad. Felhasználói profilod jóváhagyásáig szíves türelmedet kérjük.',
+    'placeholder' => [
+        'password' => 'Add meg a jelszavad',
+    ],
+];

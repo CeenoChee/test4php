@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'all_categories' => 'All categories',
+    'knowledge_categories' => 'Knowledge categories',
+    'on_the_phone' => 'On the phone',
+    'personally' => 'Personally',
+    'personally_1' => 'In our center',
+    'personally_2' => 'Make an appointment to have a personal meeting with one of our engineers.',
+    'personally_3' => 'In location',
+    'personally_4' => 'You can request delivery to your location. Please enquire about the conditions.',
+    'phone_1' => 'Call us',
+    'phone_2' => 'Our engineers are happy to assist you by phone every weekday from 8 am to 6 pm.',
+    'riel_center' => 'RIEL Center',
+    'support' => 'Support',
+    'support_meta_description' => 'You can find answers to your queries here or contact our support team if you need assitance.',
+    'what_kind_of_help_do_you_need' => 'What kind of help do you need?',
+    'writing_1' => 'Tickets',
+    'writing_2' => 'You can report any type of issue. One of our support engineers will contact you shortly to help solve your problem.',
+    'written' => 'Written',
+    'go_to_knowledge' => 'Go to the knowledge',
+    'go_to_downloads' => 'Go to the downloads',
+    'go_to_videos' => 'Go to the videos',
+    'more_results' => 'More results',
+];

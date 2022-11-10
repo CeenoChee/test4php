@@ -1,0 +1,42 @@
+.btn{
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background-color: $color-riel-light;
+    border-radius: 0.5rem;
+    color: #fff;
+    display: block;
+
+    &:hover{
+        color: white;
+        background-color: $color-riel-dark;
+    }
+}
+
+.btn-outline{
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    color: $color-riel-light;
+    display: block;
+    border: 1px solid $color-riel-light;
+
+    &:hover{
+        border-color: $color-riel-dark;
+        color: $color-riel-dark;
+    }
+}
+
+.btn-green-500 {
+    padding: 0.5rem 2rem;
+    text-align: center;
+    background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+    border-radius: 0.5rem;
+    color: #fff;
+    display: block;
+
+    &:hover{
+        color: white;
+        background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+    }
+}

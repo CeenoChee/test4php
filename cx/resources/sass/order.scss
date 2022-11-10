@@ -1,0 +1,14 @@
+@import 'colors';
+
+.payment-item{
+    &.active {
+        background-color: #fbfbfb;
+        border-color: $color-riel-light;
+        color: $color-riel-light;
+
+        label{
+            color: $color-riel-light;
+        }
+    }
+}
+

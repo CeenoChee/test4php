@@ -1,0 +1,58 @@
+form, .form {
+    input, textarea, select {
+
+        background-color: white;
+        width: 100%;
+        border: 1px solid #dfdfdf;
+        padding: 10px !important;
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+        ::placeholder {
+            color: #bbbbbb;
+        }
+
+        &:focus {
+            outline: none !important;
+            border: 1px solid $color-riel-light !important;
+        }
+
+        &.invalid {
+            border-color: red !important;
+        }
+
+        &:disabled {
+            background-color: #ebebeb;
+            cursor: not-allowed;
+        }
+    }
+
+    label {
+        font-weight: 100;
+        color: grey;
+        line-height: 2;
+
+        &.required:after {
+            position: absolute;
+            content: "*";
+            margin-left: .3rem;
+            font-size: .7rem;
+            color: #cb1500;
+        }
+    }
+
+    .dataTables_wrapper {
+        input, select {
+            width: auto !important;
+            padding: 0 !important;
+        }
+    }
+
+    .main-search{
+        &:focus{
+            border-color: #dfdfdf !important;
+        }
+    }
+}
+
+

@@ -1,0 +1,78 @@
+.accordion{
+
+    padding: 0.5rem 2rem;
+
+    .acc-item {
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid #e9e9e9;
+        }
+
+        &:not(:first-of-type) {
+            label {
+                border-top: 1px solid black;
+            }
+        }
+
+        label{
+            cursor: pointer;
+            user-select: none;
+
+            h3 {
+                margin-left: 3rem;
+                padding: 10px 0;
+                font-size: 1rem;
+                font-weight: 600;
+                color: #606060;
+
+                &:before {
+                    content: '\f0da';
+                    position: absolute;
+                    margin-left: -3rem;
+                    font-family: "Font Awesome 6 Pro";
+                    font-weight: 600;
+                    transition: all .2s ease;
+                }
+            }
+        }
+
+        a{
+            color: #0EA4E7FF;
+        }
+
+        .hiddentext {
+            display: none;
+            height: 0;
+            padding-left: 3rem;
+            padding-bottom: 1rem;
+            overflow-y: hidden;
+            transition: all 0.3s ease-out;
+        }
+
+        .item:checked ~ .hiddentext {
+            display: block;
+            height: auto;
+        }
+
+        .item:checked ~ label {
+            h3:before {
+                transform: rotateZ(90deg);
+            }
+        }
+
+        input.item {
+            display: none;
+            position: relative;
+        }
+
+        ul {
+            li {
+                margin: 5px 0;
+
+                div {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

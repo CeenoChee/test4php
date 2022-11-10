@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'accessories' => 'Tartozékok:',
+    'administrator' => 'Ügyintéző:',
+    'customer_received' => 'Megrendelő átvette',
+    'delivery' => 'Kiszállítás',
+    'denomination' => 'Megnevezés',
+    'device' => 'Berendezés:',
+    'equipment_fixed' => 'Berendezés javítva',
+    'equipment_not_fixable' => 'Berendezés nem javítható',
+    'free_of_charge' => 'Ingyenes',
+    'malfunction' => 'Hibajelenség:',
+    'no_previous_patch' => 'Nincs elöző javítás',
+    'not_handed_over' => 'Nincs leadott tartozék',
+    'previous_service' => 'Elöző javítás:',
+    'repair' => 'Javítás',
+    'repair_form' => 'Munkalap',
+    'repairs' => 'Javítások',
+    'serial_number' => 'Gyáriszám:',
+    'service_date_time' => 'Dátum / Idő:',
+    'service_status' => 'Szervizelés státusza:',
+    'type' => 'Típus',
+    'value' => 'Érték',
+    'warranty_alis' => 'Garanciális',
+    'worksheet_number' => 'Munkalap száma:',
+];

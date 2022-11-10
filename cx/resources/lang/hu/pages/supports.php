@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'all_categories' => 'Összes kategória',
+    'knowledge_categories' => 'Tudástár kategóriák',
+    'on_the_phone' => 'Telefonon',
+    'personally' => 'Személyesen',
+    'personally_1' => 'Központunkban',
+    'personally_2' => 'Előzetes időpont egyeztetés alapján lehetőséget biztosítunk személyes egyeztetésre mérnökeinkkel.',
+    'personally_3' => 'Helyszínen',
+    'personally_4' => 'Egyedi díjazással, időpont egyeztetés szerint lehetőség van helyszíni kiszállásra. A feltételekről tájékozódj.',
+    'phone_1' => 'Hívj minket',
+    'phone_2' => 'Mérnökeink minden nap 8-18 óra között várják hívásodat, hogy azonnal segítségedre lehessünk.',
+    'riel_center' => 'RIEL Központ',
+    'support' => 'Támogatás',
+    'support_meta_description' => 'Ha támogatásra van szükséged, itt megtalálod, vagy hívd kollégáinkat.',
+    'what_kind_of_help_do_you_need' => 'Milyen segítségre van szükséged?',
+    'writing_1' => 'Hibajegyek',
+    'writing_2' => 'Bármilyen jellegű hibát be tudod jelenteni. Mérnökeink hamarosan felveszik veled a kapcsolatot a probléma megoldására.',
+    'written' => 'Írásban',
+    'go_to_knowledge' => 'Tovább a tudástárhoz',
+    'go_to_downloads' => 'Tovább a letöltésekhez',
+    'go_to_videos' => 'Tovább a videókhoz',
+    'more_results' => 'További találatok',
+];

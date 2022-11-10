@@ -1,0 +1,123 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true,
+    "amd": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:vue/recommended"],
+  "globals": {
+    "vue": "readonly",
+    "vuex": "readonly",
+    "axios": "readonly",
+    "moment": "readonly",
+    "_": "readonly",
+    "$eventHub": "readonly",
+    "$": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["vue"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-prototype-builtins": "off",
+    "eqeqeq": ["warn", "smart"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "quote-props": ["error", "as-needed"],
+    "no-multi-spaces": "error",
+    "comma-dangle": ["error", "always-multiline"],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "object-property-newline": "error",
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "object-curly-spacing": ["error", "always"],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": {
+          "multiline": true,
+          "minProperties": 3,
+          "consistent": true
+        },
+        "ObjectPattern": {
+          "multiline": true
+        },
+        "ImportDeclaration": "never",
+        "ExportDeclaration": {
+          "multiline": true,
+          "minProperties": 3
+        }
+      }
+    ],
+    "vue/order-in-components":["error", {
+      "order": [
+        "el",
+        "name",
+        "key",
+        "parent",
+        "functional",
+        ["delimiters", "comments"],
+        ["components", "directives", "filters"],
+        "extends",
+        "mixins",
+        ["provide", "inject"],
+        "ROUTER_GUARDS",
+        "layout",
+        "middleware",
+        "validate",
+        "scrollToTop",
+        "transition",
+        "loading",
+        "inheritAttrs",
+        "model",
+        ["props", "propsData"],
+        "emits",
+        "setup",
+        "asyncData",
+        "data",
+        "fetch",
+        "head",
+        "computed",
+        "watch",
+        "watchQuery",
+        "LIFECYCLE_HOOKS",
+        "methods",
+        ["template", "render"],
+        "renderError"
+      ]
+    }],
+    "vue/no-unused-vars": "warn",
+    "vue/attribute-hyphenation": ["error", "never"],
+    "vue/html-closing-bracket-newline": "error",
+    "vue/html-indent": [
+      "error",
+      4,
+      {
+        "attribute": 1,
+        "baseIndent": 0,
+        "closeBracket": 0,
+        "alignAttributesVertically": true,
+        "ignores": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+runtime: php74
+
+env_variables:
+  ## Put production environment variables here.
+  APP_DEBUG: false
+  APP_STAGE: prod
+  APP_LOG: errorlog
+  APP_KEY: base64:uaVOBWUldKxWY5aon05yDSSm59Yehtx1wv2T9V0dDzc=
+
+  ## Paths
+  APP_STORAGE: /tmp
+  VIEW_COMPILED_PATH: /tmp
+  APP_SERVICES_CACHE: /tmp/services.php
+  APP_PACKAGES_CACHE: /tmp/packages.php
+  APP_CONFIG_CACHE: /tmp/config.php
+  APP_ROUTES_CACHE: /tmp/routes.php
+
+  APP_URL: https://www.riel.hu
+  TITAN_APP_URL: http://titan.riel.local
+  API_HOST: https://api.riel.hu
+  LOG_CHANNEL: stackdriver
+  SESSION_DRIVER: database
+
+  ## Set these environment variables according to your CloudSQL configuration.
+  DB_DATABASE: webprod
+  DB_USERNAME: web-prod
+  DB_PASSWORD: caxzin-tiwwys-dEwho1
+  DB_SOCKET: "/cloudsql/web-prod-240808:europe-west3:webshop-prod"
+
+  ## Mail settings
+  POSTMARK_TOKEN: fcf70ce9-37f1-4a37-a441-74e4e6b909ad
+
+  ## SimplePay settings
+  SIMPLE_SANDBOX: false
+
+  ## Insivible reCaptcha
+  INVISIBLE_RECAPTCHA_SITEKEY: 6LfdI_EcAAAAAC3UUCBqMyJNY4rSSFxlsXh-qDBU
+  INVISIBLE_RECAPTCHA_SECRETKEY: 6LfdI_EcAAAAAKIQVISrUCBcX4-qDm60SSLurIei
+  INVISIBLE_RECAPTCHA_BADGEHIDE: true
+
+  FILES_APP_URL: https://files.riel.hu
+
+  DEFAULT_NEWSLETTER_LIST_NAME: subscribers
+
+handlers:
+- url: /robots.txt
+  static_files: public/robots.txt
+  upload: public/robots.txt
+
+- url: /css
+  static_dir: public/css
+
+- url: /js
+  static_dir: public/js
+
+- url: /assets
+  static_dir: public/assets
+
+- url: /.*
+  script: auto
+  secure: always
+  redirect_http_response_code: 301

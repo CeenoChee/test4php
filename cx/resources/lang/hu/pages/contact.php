@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'call_us' => 'Hívj minket!',
+    'contact' => 'Kapcsolat',
+    'contact_meta_description' => 'Szaküzlet, Értékesítés, Technikai támogatás, Szerviz.',
+    'contact_success_message' => 'Az üzenetet sikeresen elküldted! Kollégáink hamarosan felveszik Veled a kapcsolatot!',
+    'intrusion' => 'Behatolás és tűzjelzés',
+    'message' => 'Üzenet',
+    'office' => 'Iroda',
+    'opening_hours' => 'Nyitvatartás',
+    'opening_hours_content' => 'munkanapokon 8:00-16:00h',
+    'opening_hours_content_support' => 'munkanapokon 8:00-18:00h',
+    'repair_center' => 'Szerviz',
+    'repair_center_content' => 'garanciális és garanciaidőn túli javítások',
+    'riel_warehouse' => 'RIEL Raktár',
+    'sales' => 'Értékesítés',
+    'sales_content' => 'árajánlatkérés, szerződéskötés, <br />ügyfélkapcsolattartás, projektek',
+    'shop' => 'Szaküzlet',
+    'shop_content' => 'rendelés, visszaigazolás, <br />áruátvétel, kiszállítás, számlázás',
+    'store_service' => 'Szaküzlet, szerviz',
+    'technical_support' => 'Technikai támogatás',
+    'technical_support_content' => 'műszaki segítségnyújtás, rendszertervezés',
+    'our_address' => 'Címünk',
+    'videotechnika' => 'Videotechnika',
+    'visit_us' => 'Látogass el!',
+    'write_us' => 'Írj nekünk!',
+    'placeholder' => [
+        'message' => 'Írd meg az üzenetet',
+    ],
+];

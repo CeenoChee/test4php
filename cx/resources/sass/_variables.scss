@@ -1,0 +1,82 @@
+
+// Typography
+//$font-family-sans-serif: 'Nunito', sans-serif;
+//$font-size-base: 0.9rem;
+//$line-height-base: 1.6;
+
+// Typography
+$font-title: 'Raleway', sans-serif;
+$font-fa: 'Font Awesome 6 Pro';
+$font-modern: 'Source sans pro', sans-serif;
+$font-serif: 'Crimson Pro', serif;
+//Module text
+$md-txt-def-font: 'Open Sans', sans-serif;
+$md-txt-def-size: 14px;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+// Modules background
+$md-bg-dk: #444;
+$md-bg-m: #eee;
+$md-bg-lt: #f8f8f8;
+$md-bg-wh: #fff;
+$md-bg-body: #f8fafc;
+
+$md-bg-blue-lt: #ecf3fc;
+$md-bg-green-xlt: #f2fff2;
+$md-bg-green-m: #0ea447;
+
+// Modules border
+$md-border-dk: #555;
+$md-border-m: #ccc;
+$md-border-lt: #e3e3e3;
+
+$md-border-blue-lt: #c9e4ff;
+
+// Modules text
+$md-txt-dk: #555; //lighten( $base-color, 10% )
+$md-txt-m: #888;
+$md-txt-lt: #ddd;
+$md-txt-wh: #fff;
+
+$md-txt-sel: #c2e1ff;
+
+// Modules link
+$md-txt-blue-dk: #68c;
+$md-txt-blue-m: #49d;
+$md-txt-blue-lt: #8bd;
+$md-txt-blue-xlt: #def;
+
+$md-txt-red-m: #da4836;
+
+$md-txt-green-m: #7b3;
+
+// Status colors
+$md-st-green: #7b3;
+$md-st-orange: #fa2;
+$md-st-orange-lt: #fc0;
+$md-st-red: #d43;
+$md-st-blue: #49d;
+
+// Alert colors
+$md-alert-bg-green: #d4edda;
+$md-alert-border-green: #c3e6cb;
+$md-alert-txt-green: #155724;
+
+$md-alert-bg-red: #f8d7da;
+$md-alert-border-red: #f5c6cb;
+$md-alert-txt-red: #721c24;
+
+$md-alert-bg-orange: #fff3cd;
+$md-alert-border-orange: #ffeeba;
+$md-alert-txt-orange: #856404;

@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'all' => 'All',
+    'are_you_want_to_delete' => 'Are you sure you want to delete?',
+    'asc' => 'Ascending',
+    'ask_about' => 'Ask about',
+    'cancel' => 'Cancel',
+    'desc' => 'Descending',
+    'how_can_we_help' => 'How can we help?',
+    'how_do_you_search' => 'How do you search?',
+    'how_do_you_search_1' => 'Product part number - firmware, documentation, download',
+    'how_do_you_search_2' => 'Knowledge Base Article - Title, Content',
+    'how_do_you_search_3' => 'Videos - Title, Description',
+    'keyword' => 'Keyword',
+    'name' => 'Name',
+    'no' => 'No',
+    'no_results' => 'Sorry, there are no results for <span class="font-semibold">":keyword"</span>',
+    'qsearch' => 'Search...',
+    'results' => 'Results for <span class="font-semibold">":keyword"</span>',
+    'search' => 'Search',
+    'show_all' => 'Show all',
+    'social_media' => 'Social media',
+    'view' => 'View',
+    'yes' => 'Yes',
+    'delete' => 'Delete',
+    'placeholder' => [
+        'search' => 'Start typing to search...',
+    ],
+    'categories' => 'Categories',
+    'delete_all' => 'Delete all',
+    'items' => 'Items',
+];

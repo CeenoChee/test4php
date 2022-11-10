@@ -1,0 +1,117 @@
+.steps{
+    .timeline {
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .li {
+        transition: all 200ms ease-in;
+    }
+
+    .icon {
+        margin-bottom: 20px;
+        padding: 0px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 100;
+    }
+
+    .step-title {
+        padding: 15px 40px;
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid #D6DCE0;
+        position: relative;
+        transition: all 200ms ease-in;
+    }
+    .step-title h4 {
+        font-weight: 600;
+        color: #b0b0b0;
+    }
+    .step-title:before {
+        content: "";
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border-radius: 25px;
+        border: 1px solid #ddd;
+        position: absolute;
+        top: -15px;
+        transition: all 200ms ease-in;
+    }
+
+
+
+    .order-step-title:before{
+        width: 20px;
+        height: 20px;
+        top: -12px;
+
+    }
+
+    .li.pending .step-title {
+        border-top: 2px solid #ff9e5a;
+    }
+    .li.pending .step-title:before {
+        background-color: #ff9e5a;
+        border: none;
+        transition: all 200ms ease-in;
+    }
+
+
+    .li.complete .step-title {
+        border-top: 2px solid #01ac35;
+    }
+    .li.complete .step-title:before {
+        background-color: #01ac35;
+        border: none;
+        transition: all 200ms ease-in;
+    }
+    .li.complete .step-title h4, .li.pending .step-title h4, .li.almost-completed .step-title h4 {
+        color: #474747;
+    }
+
+    @media (min-device-width: 320px) and (max-device-width: 700px) {
+
+        .step-title{
+            padding: 15px 20px;
+            font-size: 13px;
+        }
+    }
+
+}
+
+.order-timeline{
+    li:first-child {
+        width: 50px;
+
+        .order-step-title {
+            &:before {
+                left: 0;
+            }
+        }
+
+        h4{
+            position: relative;
+            right: 20px;
+        }
+    }
+
+    li:last-child {
+        width: 50px;
+
+        .order-step-title {
+            &:before {
+                right: 0;
+                left: auto;
+            }
+        }
+
+        h4{
+            position: relative;
+            left: 20px;
+        }
+    }
+}

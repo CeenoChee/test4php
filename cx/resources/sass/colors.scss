@@ -1,0 +1,35 @@
+$blue: #49d;
+$md-txt-blue-lt: #8bd;
+$md-txt-lt: #ddd;
+$color-riel-light: #5ea2d9;
+$color-riel-dark: #3169b1;
+$color-riel-gray: #777777;
+
+.text-riel-light{
+    color: $color-riel-light;
+}
+
+.text-riel-dark{
+    color: $color-riel-dark;
+}
+
+.bg-riel-light{
+    background-color: $color-riel-light;
+}
+
+.bg-riel-dark{
+    background-color: $color-riel-dark;
+}
+
+.bg-riel-gray{
+    background-color: $color-riel-gray;
+}
+
+
+
+// Status colors
+$md-st-green: #7b3;
+$md-st-orange: #fa2;
+$md-st-orange-lt: #fc0;
+$md-st-red: #d43;
+$md-st-blue: #49d;

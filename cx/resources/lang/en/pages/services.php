@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'accessories' => 'Accessories:',
+    'administrator' => 'Administrator:',
+    'customer_received' => 'Customer received',
+    'delivery' => 'Delivery',
+    'denomination' => 'Denomination',
+    'device' => 'Device:',
+    'equipment_fixed' => 'Equipment is prepaired',
+    'equipment_not_fixable' => 'Equipment cannot be repaired',
+    'free_of_charge' => 'Free of charge',
+    'malfunction' => 'Malfunction:',
+    'no_previous_patch' => 'No previous patch',
+    'not_handed_over' => 'No accessories were handed over',
+    'previous_service' => 'Previous service:',
+    'repair' => 'Repair',
+    'repair_form' => 'Serviced device',
+    'repairs' => 'Repairs',
+    'serial_number' => 'Serial Number:',
+    'service_date_time' => 'Date / Time:',
+    'service_status' => 'Service status:',
+    'type' => 'Type',
+    'value' => 'Value',
+    'warranty_alis' => 'Warranty',
+    'worksheet_number' => 'Worksheet Number:',
+];

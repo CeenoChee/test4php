@@ -1,0 +1,222 @@
+.main-menu {
+    background: linear-gradient(-45deg, $color-riel-light, #0da3d9);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+
+    .logo{
+       background-color: #e9e9e9;
+    }
+
+    @media (max-device-width: 767px) {
+        .logo{
+            &:hover{
+                background: none;
+            }
+        }
+    }
+
+    li > ul {
+        transform: translatex(100%) scale(0)
+    }
+
+    li:hover > ul {
+        transform: translatex(100%) scale(1)
+    }
+
+    li > .parent svg {
+        transform: rotate(-90deg)
+    }
+
+    li:hover > .parent svg {
+        transform: rotate(0deg);
+    }
+
+    .scale-0 {
+        transform: scale(0)
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.small-menu {
+    display: none;
+    position: absolute;
+    text-align: left;
+
+    color: #575757;
+    font-size: 14px;
+
+    a{
+        color: #575757;
+        font-size: 14px;
+    }
+
+}
+
+.profile-menu{
+    right: 0;
+}
+
+.toggleable > label:after {
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+}
+
+.toggle-input {
+    display: none;
+}
+.toggle-input:not(checked) ~ .nav-menu {
+    display: none;
+}
+
+.toggle-input:checked ~ .nav-menu {
+    display: block;
+}
+
+.toggle-input:checked + label {
+    color: white;
+}
+
+.toggle-input:checked ~ label:after {
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+}
+
+.promotion-menu {
+    animation: shake-animation 4.72s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes shake-animation {
+    0% { transform:translate(0,0) }
+    1.78571% { transform:translate(5px,0) }
+    3.57143% { transform:translate(0,0) }
+    5.35714% { transform:translate(5px,0) }
+    7.14286% { transform:translate(0,0) }
+    8.92857% { transform:translate(5px,0) }
+    10.71429% { transform:translate(0,0) }
+    100% { transform:translate(0,0) }
+}
+
+
+
+
+
+#nav-icon2 {
+    width: 40px;
+    height: 25px;
+    position: relative;
+    margin: 0 10px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    &:focus{
+        background: none;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 50%;
+        background: #ffffff;
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+}
+
+
+#nav-icon2 span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 10px 10px 0;
+}
+
+#nav-icon2 span:nth-child(odd) {
+    left:0px;
+    border-radius: 10px 0 0 10px;
+}
+
+#nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
+    top: 2px;
+}
+
+#nav-icon2 span:nth-child(3), #nav-icon2 span:nth-child(4) {
+    top: 14px;
+}
+
+#nav-icon2 span:nth-child(5), #nav-icon2 span:nth-child(6) {
+    top: 26px;
+}
+
+#nav-icon2.mobile-open span:nth-child(1),#nav-icon2.mobile-open span:nth-child(6) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon2.mobile-open span:nth-child(2),#nav-icon2.mobile-open span:nth-child(5) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon2.mobile-open span:nth-child(1) {
+    left: 5px;
+    top: 7px;
+}
+
+#nav-icon2.mobile-open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 7px;
+}
+
+#nav-icon2.mobile-open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+}
+
+#nav-icon2.mobile-open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+}
+
+#nav-icon2.mobile-open span:nth-child(5) {
+    left: 5px;
+    top: 17px;
+}
+
+#nav-icon2.mobile-open span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 17px;
+}

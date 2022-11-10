@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'confirm_your_email' => "Please confirm your email address by clicking the link we've sent you to your email address.",
+    'email_not_confirmed' => 'Your e-mail hasn\'t been approved.<br>If you can\'t find the e-mail containing the activation link, click<a class="text-riel-light" href=\":link\">send again!</a>',
+    'forgot_password' => 'Forgot password',
+    'incorrect_password' => 'Incorrect password!',
+    'login' => 'Login',
+    'login_meta_description' => 'Log in to your account to see prices, stock availability, and you can place orders.',
+    'logout' => 'Logout',
+    'new_register' => 'New registration',
+    'newsletter_accept' => 'Newsletter',
+    'not_valid_link' => 'The link is no longer valid.',
+    'password_reset' => 'Password reset',
+    'profile_not_activated' => 'Your account is awainting approval. Our colleagues are going to activate your account within one working day.',
+    'profile_pending' => 'The user profile will be available in a few minutes.',
+    'register' => 'Registration',
+    'register_accept' => 'I have read and accepted the <a class="text-riel-light" href=":terms_link">Terms of Service</a> and the <a class="text-riel-light" href=":privacy_link">Privacy Policy</a>.',
+    'register_meta_description' => 'Create account to see prices, stock availability and place orders.',
+    'register_success' => 'Successful registration',
+    'register_summary' => 'Registration summary',
+    'register_summary_meta_description' => 'Create account to see prices, stock availability and place orders.',
+    'remember' => 'Remember me',
+    'send_verification_success' => 'We have sent you a link again so you can activate your e-mail address.',
+    'update_password' => 'Update password',
+    'verification_subject' => 'E-mail confirmation',
+    'your_mail_is_valid' => 'You have successfully confirmed your e-mail address.',
+    'placeholder' => [
+        'password' => 'Type your password',
+    ],
+];
