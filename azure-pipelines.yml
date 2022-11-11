@@ -40,6 +40,19 @@ stages:
     pool:
       vmImage: ${{ parameters.vmImageName }}
     steps:
+    # - bash: |
+    #     cd /home
+    #     ls
+    #     mkdir site
+    #     cd site
+    #     mkdir wwwroot
+    - task: ExtractFiles@1
+      inputs:
+        archiveFilePatterns: '**/144.zip'
+        destinationFolder: 'cx1'
+        cleanDestinationFolder: true
+        overwriteExistingFiles: false
+    - script: ls $(System.DefaultWorkingDirectory)
     - script: |
         sudo update-alternatives --set php /usr/bin/php${{ parameters.phpVersion }}
         sudo update-alternatives --set phar /usr/bin/phar${{ parameters.phpVersion }}
@@ -53,8 +66,10 @@ stages:
     # - upload: ${{ parameters.rootFolder }}
     #   displayName: 'Upload package'
     #   artifact: AfterUsePHPVersion
-
-    - script: composer install --no-interaction --prefer-dist
+    - script: |
+        composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+        # php artisan cache:clear
+        # php artisan config:cache
       workingDirectory: ${{ parameters.rootFolder }}
       displayName: 'Composer install'
 
