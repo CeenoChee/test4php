@@ -67,9 +67,9 @@ stages:
     #   displayName: 'Upload package'
     #   artifact: AfterUsePHPVersion
     - script: |
-        # composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
-        php artisan cache:clear
-        php artisan config:cache
+        composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+        # php artisan cache:clear
+        # php artisan config:cache
       workingDirectory: ${{ parameters.rootFolder }}
       displayName: 'Composer install'
 
