@@ -12,7 +12,7 @@ parameters:
 
   # Web app name
 - name: webAppName
-  default: 'azwebappphp74'
+  default: 'azwebappphp81'
 
   # Agent VM image name
 - name: vmImageName
@@ -28,7 +28,7 @@ parameters:
 
   # PHP version
 - name: phpVersion
-  default: '7.4'
+  default: '8.1'
 
 stages:
 - stage: Build
