@@ -1,0 +1,87 @@
+# PHP as Linux Web App on Azure
+# Build, package and deploy your PHP project to Azure Linux Web App.
+# Add steps that run tests and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/php
+
+trigger: none
+
+parameters:
+  # Azure Resource Manager connection created during pipeline creation
+- name: azureSubscription
+  default: 'ARM_Svc_Cnn_Auto_Sub1'
+
+  # Web app name
+- name: webAppName
+  default: 'azwebappphp81'
+
+  # Agent VM image name
+- name: vmImageName
+  default: 'ubuntu-latest'
+
+  # Environment name
+- name: environmentName
+  default: 'azwebappphp'
+
+  # Root folder under which your composer.json file is available.
+- name: rootFolder
+  default: $(System.DefaultWorkingDirectory)
+
+  # PHP version
+- name: phpVersion
+  default: '8.1'
+
+stages:
+- stage: Build
+  displayName: Build stage
+  variables:
+    phpVersion: '${{ parameters.phpVersion }}'
+  jobs:
+  - job: BuildJob
+    pool:
+      vmImage: ${{ parameters.vmImageName }}
+    steps:
+    - script: |
+        sudo update-alternatives --set php /usr/bin/php${{ parameters.phpVersion }}
+        sudo update-alternatives --set phar /usr/bin/phar${{ parameters.phpVersion }}
+        sudo update-alternatives --set phpdbg /usr/bin/phpdbg${{ parameters.phpVersion }}
+        sudo update-alternatives --set php-cgi /usr/bin/php-cgi${{ parameters.phpVersion }}
+        sudo update-alternatives --set phar.phar /usr/bin/phar.phar${{ parameters.phpVersion }}
+        php -version
+      workingDirectory: ${{ parameters.rootFolder }}
+      displayName: 'Use PHP version ${{ parameters.phpVersion }}'
+    - script: composer install --no-interaction --prefer-dist
+      workingDirectory: ${{ parameters.rootFolder }}
+      displayName: 'Composer install'
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '${{ parameters.rootFolder }}'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+
+# - stage: Deploy
+#   displayName: 'Deploy Web App'
+#   dependsOn: Build
+#   condition: succeeded()
+#   jobs:
+#   - deployment: DeploymentJob
+#     pool:
+#       vmImage: ${{ parameters.vmImageName }}
+#     environment: ${{ parameters.environmentName }}
+#     strategy:
+#       runOnce:
+#         deploy:
+#           steps:
+#           - task: AzureWebApp@1
+#             displayName: 'Deploy Azure Web App : ${{ parameters.webAppName }}'
+#             inputs:
+#               azureSubscription: ${{ parameters.azureSubscription }}
+#               appName: ${{ parameters.webAppName }}
+#               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
